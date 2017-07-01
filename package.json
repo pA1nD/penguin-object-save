@@ -1,6 +1,6 @@
 {
   "name": "penguin-object-save",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Save button that saves a copy in a global field (useful for objects in penguin.js).",
   "module": "index.js",
   "scripts": {
