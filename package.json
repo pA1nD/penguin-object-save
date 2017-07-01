@@ -2,9 +2,10 @@
   "name": "penguin-object-save",
   "version": "1.0.0",
   "description": "Save button that saves a copy in a global field (useful for objects in penguin.js).",
-  "main": "index.js",
+  "module": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "rollup -c rollup.config.js -o index.js src/index.js",
+    "watch": "rollup -w -c rollup.config.js -o index.js src/index.js"
   },
   "repository": {
     "type": "git",
@@ -14,8 +15,16 @@
     "penguinjs",
     "penguinjs-component"
   ],
-  "author": "Björn Schmidtke",
+  "author": "Björn Schmidtke <bs@websites-smart.de> ",
   "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "rollup": "^0.41.4",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-watch": "^3.2.2",
+    "standard": "^8.6.0",
+    "xtend": "^4.0.1"
+  },
   "bugs": {
     "url": "https://github.com/pa1nd/penguin-object-save/issues"
   },
